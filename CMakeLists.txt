@@ -146,6 +146,11 @@ if(BUILD_TESTING)
     rclcpp
   )
 
+  install(
+    DIRECTORY launch
+    DESTINATION share/${PROJECT_NAME}
+  )
+
   install(TARGETS um6_comms_test
     DESTINATION test/${PROJECT_NAME})
 
